@@ -1,0 +1,209 @@
+@media #{$ipad-landscape} {
+    .background--header {
+        .img-2 {
+            margin-top: 350px;
+            margin-right: 20px;
+        }
+    }
+
+    .article {
+        &-2 {
+            left: 50%;
+            margin-right: 5%;
+        }
+    }
+
+    .section--content {
+        &-1 {
+            .picture {
+                img {
+                    height: 50vh;
+                }
+            }
+        }
+
+        &-2 {
+            height: 200vh;
+        }
+
+        &-3 {
+            height: 180vh;
+        }
+    }
+
+    .background--section {
+        left: 50%;
+
+        img {
+            height: 40vh;
+        }
+    }
+
+    .footer-info {
+        top: 75%;
+        left: 2%;
+        width: 98%;
+
+        table {
+            margin-left: 5%;
+
+            th {
+                padding-right: 120px;
+            }
+        }
+
+    }
+
+    footer {
+        .picture {
+            img {
+                width: unset;
+                height: 60vh;
+            }
+        }
+    }
+
+}
+
+@media #{$iphoneX} {
+    .background--header {
+        .img-1 {
+            width: 250%;
+        }
+        .img-2{
+            top: 40%;
+            left: 5%;
+        }
+    }
+
+    nav {
+        display: block;
+
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            li{
+                padding: 5% ;
+            }
+        }
+    }
+    header{
+        height: 150vh;
+    }
+    .article{
+        &-1{
+            color: $white;
+            top: 60vh;
+            h1{
+                font-size: $normal-st-2;
+                strong{
+                    font-size: $footer-h2;
+                }
+            }
+            p{
+                color: $white;
+            }
+        }
+        &-2{
+            padding-right: 20px;
+            h2{
+                font-size: $footer-h2;
+            }
+        }
+        &-3{
+            position: relative;
+            left: 10%;
+            h2{
+                font-size: $footer-h2;
+            }
+        }
+
+    }
+    .section--content{
+        &-1{
+            height: 140vh;
+            .picture{
+                top: 0%;
+                left: 5%;
+                img{
+                    width: 90vw;
+                    height: unset;
+                }
+            }
+            article{
+                top: 70%;
+                left: 10%;
+                position: relative;
+            }
+            .background--section{
+                top: 30%;
+                left: 0px;
+                img{width: 80vw;
+                    height: unset;
+                    ;}
+            }
+        }
+        &-2{
+            height: auto ;
+            
+            .card{
+                p{
+                    font-size: 13px;
+                }
+            }
+        }
+        &-3{
+            height: auto;
+            padding-bottom: 40px;
+        }
+    }
+
+    footer{
+        
+        margin: $center;
+        width: 90%;
+        .footer-info{
+            left: -2%;
+            .footer-logo{
+                margin: $center;
+            }
+        }
+        form{
+            flex-direction: column;
+            input{
+                padding-right:20px;
+                margin-right: 0px;
+            }
+            button{
+                width: 50%;
+                margin: 25px auto;
+            }
+        }
+
+        .picture{
+            
+            top:20vh;
+            img{
+                height: 100vh;
+                width: unset;
+            }
+        }
+        
+        .footer-info table {
+                
+                margin-left: 0%;
+            
+            th {
+                padding-right: 5px;
+                padding-bottom: 2px;
+                font-size: $XXsmall;
+            }
+            td{
+                font-size: 12px;
+            }
+        }
+    }
+}

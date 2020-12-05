@@ -1,0 +1,67 @@
+.button {
+    font-family     : $poppins;
+    padding         : 13px 40px;
+    border-radius   : 25px;
+    color           : $white;
+    background-image: linear-gradient(to left, $purple, $blue);
+    border: none;
+    &:hover{
+        cursor: pointer;
+    }
+    &-card{
+        @extend .button;
+        font-size: 12px;
+        padding  : 6px 18.5px 6.7px 18px;
+        position : absolute;
+        right    : 56px;
+        bottom   : 27.3px;
+
+        &-alternative{
+            @extend .button; 
+            border: solid 1px #1000ff;
+            background-image: none;
+            color: $dark-grey;
+            align-self: center;
+            margin-top: 0px;
+            
+        }
+        &-price{
+            @extend.button;
+            position: relative;
+            align-self: center;
+            margin-top: 0px;
+        }
+    }
+}
+
+.icon {
+    display       : flex;
+    flex-direction: column;
+    position      : absolute;
+    top           : 100%;
+    transform     : translateY(-50%);
+    left          : -10%;
+
+    img {
+        padding: 40%;
+        width  : 110%;
+    }
+
+    .separator {
+
+        margin: $center;
+        width : 3px;
+        height: 29px;
+        background-image: linear-gradient(to left, $purple, $blue);
+    }
+
+    &-footer{
+        
+        picture{
+            padding-right: 40px;
+            img{
+                height: 15px;
+            }
+        };
+    }
+}

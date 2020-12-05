@@ -1,0 +1,142 @@
+h1 {
+    font: {
+        weight: $normal;
+        size  : $large;
+    }
+    height: 1.2;
+    strong {
+        font: {
+            size  : $Xlarge;
+            weight: $bold;
+        }
+    }
+}
+h2{
+    font: {
+        size  : $large;
+        family: $poppins;
+        weight: $semi-bold;
+    }
+    color     : $dark-grey;
+}
+
+h3{
+    font-family  : $lato;
+    color        : $dark-grey;
+    font-size    : $small;
+    margin-bottom: 30px;
+}
+
+.article {
+    font-family: $poppins;
+    font-weight: $normal;
+    color      : $grey;
+}
+
+.paragraph {
+    font-weight  : $thin;
+    color        : $light-grey;
+    line-height  : 1.63;
+    margin-bottom: 30px;
+    &-card{
+        @extend.paragraph;
+        font: {
+            family: $lato;
+            weight: $normal;
+            size  : $XXsmall;
+        }
+        color: $dark-grey;
+
+        &-price{
+            
+            color: $light-grey;
+        font: {
+            weight: $thin;
+            family: $poppins;
+        }
+        }
+    }
+}
+.section--title{
+    font: { 
+        family: $lato;
+        weight: $regular;
+        size  : $normal-st;
+    }
+    color: $light-purple;
+    &-1{
+        @extend .section--title;
+    }
+    &-2{
+        @extend .section--title;
+        font-size: $normal-st-2;
+    }
+    &-3{
+        @extend .section--title;
+        text-align: center;
+        padding-top: 90px;
+    }
+}
+
+.price{
+    font: {
+        size  : $price;
+        family: $poppins;
+        weight:$semi-bold
+        
+    }
+    color: $strong-purple;
+}
+
+footer h2{
+    font: {
+        size:$footer-h2;
+        weight:$normal;
+    }
+    text-align: center;
+    strong{
+        font-weight: $semi-bold;
+    }
+}
+
+.footer-info{
+    
+    color      : $white;
+    font-family: $poppins;
+
+    .footer-logo{
+        text-align: center;
+        font-size: $footer-h2;
+        font-weight: $medium;
+        h2{
+            @extend .footer-logo;
+            margin-bottom: 20px;
+            font: {
+                weight:$black;
+                size:$large;
+            }
+        }
+        
+    }
+    p{
+        font: {
+            weight: $medium;
+        }
+
+    }
+    h2{
+        color: $white;
+        text-align: left;
+    }
+    table{
+        th{
+            font-size: $small;
+            font-weight: $medium;
+        }
+        td{
+            font-size: $Xsmall;
+            font-family: $poppins;
+            font-weight: $normal;
+        }
+    };
+}

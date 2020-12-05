@@ -1,0 +1,37 @@
+.footer-info{
+    position : absolute;
+    transform: translateY(-50%);
+    bottom   : 0%;
+    left     : 10%;
+    width    : $page-width;
+    margin   : $center;
+    position : absolute;
+    z-index  : 2;
+    display  : flex;
+    flex-wrap: wrap;
+
+    .footer-logo{
+        text-align: center;
+    }
+
+    table
+    {
+        
+        margin-left: 25%;
+
+
+        th{
+            padding-right : 145px;
+            padding-bottom: 30px;
+            font-size     : $poppins;
+
+        }
+        th:nth-child(2){
+                padding-right: 10%;
+        }
+        td{
+            padding-bottom: 15px;
+        }
+    }
+    
+}

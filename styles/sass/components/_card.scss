@@ -1,0 +1,57 @@
+.card-section{
+    display  : flex;
+    flex-wrap: wrap;
+    margin   : 0 3%;
+    justify-content: center;
+    
+    
+}
+
+.card {
+    z-index: 3;
+    margin: {
+        top  : 5%;
+        right: 3%;
+        left : 3%;
+    }
+    background-color: $white;
+    position        : relative;
+    width           : $card-width;
+    height          : $card-height;
+    padding         : 21.4px 20.6px 27.3px 30.3px;
+    border-radius   : 36px;
+    box-shadow      : 0 10px 20px 0 rgba(126, 118, 249, 0.1);
+
+    picture {
+        display        : flex;
+        justify-content: center;
+        margin-bottom  :  37.6px;
+    }
+}
+
+.card-price {
+    display       : flex;
+    flex-direction: column;
+    width         : 370px;
+    height        : 463px;
+    margin-top    : 60px ;
+    padding       : 65px 39.4px 53px 40.1px;
+    border-radius : 26px;
+    background-color: $white;
+    h3{
+        font-size    : $normal-st-2;
+        text-align   : center;
+        margin-bottom: 70px;
+    }
+    p{
+        text-align   : center;
+        margin-bottom: 36px;
+    }
+
+    &-2{
+        @extend.card-price;
+        box-shadow  : 0 10px 20px 0 rgba(126, 118, 249, 0.16);
+        margin-left : 5%;
+        margin-right: 5%;
+    }
+}

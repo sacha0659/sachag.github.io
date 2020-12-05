@@ -1,0 +1,25 @@
+.article{
+    position: absolute;
+    
+    transform: translateY(-50%);
+    
+    
+    &-1{
+        @extend .article;
+        top: 40%; 
+        left: 15%;
+        width: 70%;
+        margin: 0 auto;
+    }
+    &-2{
+        @extend .article;
+        top: 50%; 
+        left: 52%;
+        margin-right: 15%;
+
+    }
+    &-3{
+        @extend .article;
+        left:15%
+    }
+}

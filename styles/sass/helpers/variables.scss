@@ -1,0 +1,46 @@
+//font
+$poppins    : 'Poppins';
+$lato       : 'Lato', sans-serif;
+    //weights
+    $thin       : 300;
+    $regular    : 400;
+    $medium     : 500;
+    $normal     : normal;
+    $semi-bold  : 600;
+    $bold       : 700;
+    $black      : 800;
+    //sizes
+    $XXsmall    : 15px;
+    $Xsmall     : 16px;
+    $small      : 18px;
+    $large      : 50px;
+    $Xlarge     : 74px;
+    //specials-sizes
+    $normal-st  : 20px;
+    $normal-st-2: 25px;
+    $price      : 30px;
+    $footer-h2  : 32px;
+
+//sizes
+$page-width : 70%;
+$center     : 0 auto;
+$card-width : 366.8px;
+$card-height: 410.2px;
+
+//colors
+$grey                    : #484848;
+$white                   : white;
+$black                   : black;
+    //gradient
+    $purple              : #6156f9;
+    $blue                : #1a129f;
+$light-purple            : #7e76f9;
+$light-purple-low-opacity: #7f76f93a;
+$strong-purple           : #1000ff;
+$super-light-grey        : #f6f7fb;
+$light-grey              : #7a839e;
+$dark-grey               : #42495b;
+
+//media queries
+$ipad-landscape: "screen and (max-width: 1024px)";
+$iphoneX: "screen and (max-width: 414px)";
